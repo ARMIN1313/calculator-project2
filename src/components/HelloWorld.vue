@@ -22,4 +22,11 @@
         <td><button @click="div" id="div">/</button></td>
         <td><button @click="clear" id="clear">C</button></td>
       </tr>
+      <tr>
+        <td><button @click="digit(4)" class="digit">4</button></td>
+        <td><button @click="digit(5)" class="digit">5</button></td>
+        <td><button @click="digit(6)" class="digit">6</button></td>
+        <td><button @click="mul" id="mul">*</button></td>
+        <td><button @click="remove" id="remove">del</button></td>
+      </tr>
  </template>
