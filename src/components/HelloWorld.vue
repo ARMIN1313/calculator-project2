@@ -12,9 +12,13 @@
             type="number"
             style="padding: 5px; font-weight: bold; text-align: right"
           />
-      <td>
-        <!-- table data -->
-        </tr>
+        </td>
+
+        <td>
+          <!-- table data -->
+        </td>
+      </tr>
+
       <tr>
         <td><button @click="digit(7)" class="digit">7</button></td>
         <td><button @click="digit(8)" class="digit">8</button></td>
@@ -36,4 +40,21 @@
         <td><button @click="minus" id="minus">-</button></td>
         <td><button @click="mod" id="mod">%</button></td>
       </tr>
- </template>
+      <tr>
+        <td colspan="2"><button @click="digit(0)" class="digit">0</button></td>
+        <td><button @click="sum" id="sum">+</button></td>
+        <td colspan="2"><button @click="equal" id="equal">=</button></td>
+      </tr>
+    </table>
+  </div>
+</template>
+<script>
+export default {
+  name: "HelloWorld",
+  props: {
+    msg: String,
+  },
+};
+</script>
+<style scoped>
+</style>
