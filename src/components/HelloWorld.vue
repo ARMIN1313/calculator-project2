@@ -80,6 +80,11 @@ export default {
       this.op = "-";
       this.screen = "";
     },
+    div() {
+      this.value1 = parseInt(this.screen, 10);
+      this.op = "/";
+      this.screen = "";
+    },
   },
 };
 </script>
