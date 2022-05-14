@@ -72,7 +72,7 @@ export default {
     },
     mul() {
       this.value1 = parseInt(this.screen, 10);
-      this.op = "";
+      this.op = "*";
       this.screen = "";
     },
     minus() {
@@ -88,6 +88,9 @@ export default {
     mod() {
       this.value1 = parseInt(this.screen, 10);
       this.op = "%";
+      this.screen = "";
+    },
+    clear() {
       this.screen = "";
     },
   },
