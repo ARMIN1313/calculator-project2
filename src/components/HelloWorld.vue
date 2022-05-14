@@ -54,6 +54,14 @@ export default {
   props: {
     msg: String,
   },
+  data() {
+    return {
+      screen: "",
+      value1: Number,
+      value2: Number,
+      op: "",
+    };
+  },
 };
 </script>
 <style scoped>
