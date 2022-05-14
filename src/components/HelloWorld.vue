@@ -93,6 +93,32 @@ export default {
     clear() {
       this.screen = "";
     },
+    equal() {
+      switch (this.op) {
+        case "+":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value2 + this.value1;
+          break;
+        case "-":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value1 - this.value2;
+          break;
+        case "/":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value1 / this.value2;
+          break;
+        case "%":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value1 % this.value2;
+          break;
+        case "*":
+          this.value2 = parseInt(this.screen, 10);
+          this.screen = this.value1 * this.value2;
+          break;
+        default:
+          break;
+      }
+    },
   },
 };
 </script>
