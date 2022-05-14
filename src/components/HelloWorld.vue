@@ -18,7 +18,6 @@
           <!-- table data -->
         </td>
       </tr>
-
       <tr>
         <td><button @click="digit(7)" class="digit">7</button></td>
         <td><button @click="digit(8)" class="digit">8</button></td>
@@ -62,7 +61,15 @@ export default {
       op: "",
     };
   },
+  methods: {
+    digit(n) {
+      this.screen += n;
+    },
+    sum() {
+      this.value1 = parseInt(this.screen, 10);
+      this.op = "+";
+      this.screen = "";
+    },
+  },
 };
 </script>
-<style scoped>
-</style>
