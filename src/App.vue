@@ -1,5 +1,4 @@
 <template>
-  <img alt="" src="" />
   <HelloWorld msg="Hello Vue 3 in CodeSandbox!" />
 </template>
 

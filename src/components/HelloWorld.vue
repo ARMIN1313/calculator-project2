@@ -122,3 +122,17 @@ export default {
   },
 };
 </script>
+<style scoped>
+button {
+  border: 1px solid gray;
+  background-color: azure;
+  width: 100%;
+}
+table {
+  border: 1px solid black;
+  background-color: aquamarine;
+}
+input {
+  background-color: azure;
+}
+</style>
