@@ -75,6 +75,11 @@ export default {
       this.op = "";
       this.screen = "";
     },
+    minus() {
+      this.value1 = parseInt(this.screen, 10);
+      this.op = "-";
+      this.screen = "";
+    },
   },
 };
 </script>
