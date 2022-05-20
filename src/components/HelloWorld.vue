@@ -93,6 +93,11 @@ export default {
     clear() {
       this.screen = "";
     },
+    remove() { 
+      this.screen = this.screen.slice(1);
+  },
+  
+    },
     equal() {
       switch (this.op) {
         case "+":
@@ -115,12 +120,15 @@ export default {
           this.value2 = parseInt(this.screen, 10);
           this.screen = this.value1 * this.value2;
           break;
+        case "del":
+         this.screen = this.screen.slice(1);
+          break;
         default:
           break;
       }
     },
-  },
-};
+  };
+
 </script>
 <style scoped>
 button {
