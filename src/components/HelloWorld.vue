@@ -43,7 +43,7 @@
         <td colspan="2"><button @click="digit(0)" class="digit">0</button></td>
         <td><button @click="sum" id="sum">+</button></td>
         <td><button @click="decimal" id="decimal">.</button></td>
-       <td><button @click="equal" id="equal">=</button></td>
+        <td><button @click="equal" id="equal">=</button></td>
       </tr>
     </table>
   </div>
@@ -77,8 +77,9 @@ export default {
       this.op = "*";
       this.screen = "";
     },
-    decimal() {  this.screen = this.screen + (".") + this.scr2;
-       },
+    decimal() {
+      this.screen = this.screen + "." + this.scr2;
+    },
     minus() {
       this.value1 = parseInt(this.screen, 10);
       this.op = "-";
@@ -125,7 +126,7 @@ export default {
           this.screen = this.value1 * this.value2;
           break;
         case ".":
-         this.screen = this.screen + (".") + this.scr2;
+          this.screen = this.screen + "." + this.scr2;
           break;
         case "del":
           this.screen = this.screen.slice(1);
