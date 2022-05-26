@@ -34,3 +34,8 @@ for example give us that link:http://localhost:3000/
 ✅yarn.lock
 
 ##now we start our project
+#For calculator we needs:
+index.html
+./src/App.vue
+./src/components/HelloWorld.vue
+##and write codes for calculator in that folders
