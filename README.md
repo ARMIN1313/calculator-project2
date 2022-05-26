@@ -2,9 +2,9 @@
 
 ##In that project we need two application or code
 
-sandbox site
+site: code sandbox
 
-application:vscode,git bash
+application: vscode,git bash
 
 site: https://codesandbox.io
 ###If you use the application you must write my codes in
